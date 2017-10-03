@@ -1,0 +1,12 @@
+table {
+	width: 100%;
+	font-family:  arial, sans-serif;
+}
+
+.highlight {
+	font-family:  arial, sans-serif, bold;
+}
+
+.colorGrey {
+	background-color: #d3d3d3;
+}
