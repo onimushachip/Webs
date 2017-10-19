@@ -1,0 +1,15 @@
+
+function processDate() {
+   // actual processing code goes here
+
+   input = document.getElementById("date").value;
+
+
+   place = document.getElementById("result");
+   place.innerHTML = "This is where the result would go based on input: " + input;
+}
+
+window.onload = function() {
+  thebutton = document.getElementById("process");
+  thebutton.onclick = processDate;
+}
