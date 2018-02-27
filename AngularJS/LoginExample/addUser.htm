@@ -1,0 +1,25 @@
+<h1>Add User</h1>
+
+<form action="index.html">
+    <table>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" ng-model="username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" ng-model="password"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" ng-model="address"></td> 
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="number" ng-model="phone"></td>
+        </tr>
+    </table>
+</form>
+
+<div>{{username + password + address + phone}}</div>
+<button ng-click="addUser()">Add User</button>

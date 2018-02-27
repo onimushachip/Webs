@@ -1,0 +1,15 @@
+<h1>List User</h1>
+
+<table>
+    <tr>
+        <th>User</th>
+        <th>Address</th>
+        <th>Phone</th>
+    </tr>
+    <tr ng-repeat="user in userList">
+        <td>{{user.username}}</td>
+        <td>{{user.info.address}}</td>
+        <td>{{user.info.phone}}</td>
+    </tr>
+</table>
+<h2 ng-model="userNumbers">The number of users is {{userNumbers}}</h2>

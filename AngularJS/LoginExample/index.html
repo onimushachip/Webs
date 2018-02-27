@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="loginExample">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="angular.min.js"></script>
+</head>
+<body id="body">
+    <div>
+        Test Login Page
+    </div>
+    <div ng-controller="loginController">
+        <form name="loginForm">
+            <table>
+                <tr>
+                    <td>
+                        Username: 
+                    </td>
+                    <td>
+                        <input id="usernameField" name="userNameField" type="text" ng-model="userName" required><br>            
+                    </td>
+                    <td>
+                        <div ng-show="loginForm.userNameField.$invalid && loginForm.userNameField.$dirty">Username is required</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password: 
+                    </td>
+                    <td>
+                        <input id="userPasswordField" name="userPasswordField" type="password" ng-model="userPassword" required>
+                    </td>
+                    <td>
+                        <div ng-show="loginForm.userPasswordField.$invalid && loginForm.userPasswordField.$dirty">Password required</div>
+                    </td>   
+                </tr>
+            </table>
+        </form>  
+    </div>
+    <button id="submitBt">Login</button>
+    <script src="testLogin.js"></script>
+</body>
+</html>
